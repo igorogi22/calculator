@@ -1,0 +1,47 @@
+{
+  "name": "@igorogi22/calculator",
+  "version": "0.0.0",
+  "description": "This is a package to simple calcs like sum, subtraction, division and multiplication",
+  "author": "Igor Vinicius <igorvinicius.oli@gmail.com>",
+  "keywords": [
+    "typescript",
+    "calc",
+    "sum",
+    "subtraction",
+    "division",
+    "multiplication"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "types": "./lib",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run build:cjs",
+    "build:cjs": "tsc",
+    "clean": "del lib/*",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.5"
+  }
+}
